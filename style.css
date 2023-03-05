@@ -5,12 +5,15 @@ body {
     height: 100vh;
 }
 
+
+}
 .maindetails {
     padding-left: 15px;
     padding-top: 5px;
     margin-bottom: 0px;
 }
-
+.
+}
 .maintemperature {
     text-align: center;
 }
@@ -25,7 +28,7 @@ body {
     background: rgba(12, 12, 12, 0.02);
     border: none;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 10px ;
     height: 170px;
     width: 120px;
 }
@@ -89,7 +92,7 @@ body {
     width: 60%;
     border-radius: 20px;
     padding: 3em;
-    padding-bottom: 1em;
+    padding-bottom: 2.5em;
     display: block;
     margin: 0 auto;
 }
@@ -109,7 +112,7 @@ body {
 }
 
 .float-left {
-    font-size: 48px;
+    font-size: 58px;
     display: block;
     text-align: center;
     margin-bottom: 0.05em;
@@ -128,14 +131,14 @@ body {
 
 .day {
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 10px;
     width: 135px;
+    line-height:0.3;
+    margin-bottom:30px;
+    box-sizing:content-box;
 }
 
-    .day small {
-        font-size: 13px;
-       
-    }
+   
 
     .day img {
         width: 80px;
@@ -145,12 +148,18 @@ body {
 
 
 .coder {
-    margin:50px;
-  font-weight:14px;
+    font-weight: 14px;
+    display:block;
+    width: 80%;
     text-align:center;
     padding:20px;
-   
+    margin-left:100px;
+    
+    
 }
 a{
     color:purple;
+}
+h5{
+    line-height:0.9;
 }
