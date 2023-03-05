@@ -133,19 +133,21 @@ body {
 }
 
     .day small {
-        font-size: 15px;
-        padding: 15px;
+        font-size: 13px;
+       
     }
 
     .day img {
-        width: 100px;
+        width: 80px;
         margin-top: -10px;
+        margin-bottom: -5px;
     }
 
 
 .coder {
     margin:0 auto;
     display:block;
+    text-align:center;
    
 }
 a{
