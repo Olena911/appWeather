@@ -1,0 +1,153 @@
+﻿
+body {
+    font-family: Afont-family: 'Playfair Display', serif;
+    background: radial-gradient(#e66465, #9198e5);
+    height: 100vh;
+}
+
+.maindetails {
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+.maintemperature {
+    text-align: center;
+}
+
+.datetime {
+    text-align: right;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+.day {
+    background: rgba(12, 12, 12, 0.02);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    height: 170px;
+    width: 120px;
+}
+
+.degreepreference {
+    text-align: right;
+}
+
+.mainimagelocation {
+    padding-bottom: 20px;
+}
+
+.mainimage {
+    width: 200px;
+}
+
+.searchbar {
+    border-radius: 5px;
+    padding: 0;
+    display: block;
+    text-align: right;
+}
+
+.searchfield {
+    border-radius: 20px;
+    border: burlywood;
+    padding: 7px;
+    margin: 15px
+}
+
+
+.searchbutton {
+    background-color: white;
+    border-radius: 15px;
+    border: burlywood;
+    padding: 7px 10px;
+    transition: all 100ms ease-in-out;
+}
+
+#current {
+    padding: 7px 10px;
+    margin-left: 20px;
+    margin-top: 15px
+}
+
+.searchbutton:hover {
+    background-color: #e1eae9;
+    border: none;
+}
+
+.topbar {
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.currentDescription {
+    background: #f7b2d0;
+    box-sizing: border-box;
+    box-align: center;
+    width: 60%;
+    border-radius: 20px;
+    padding: 3em;
+    padding-bottom: 5em;
+    display: block;
+    margin: 0 auto;
+}
+
+.currentdetailsFeels {
+    text-transform: capitalize;
+}
+
+.currentimage {
+    padding-bottom: 20px;
+}
+
+.degreePreference {
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.float-left {
+    font-size: 48px;
+    display: block;
+    text-align: center;
+    margin-bottom: 0.05em;
+    line-height: 0.7;
+    padding: 10px
+}
+
+.currentdetailsFeels {
+    text-align: left;
+    padding: 20px
+}
+
+.datetime {
+    color: blueviolet;
+}
+
+.day {
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 135px;
+}
+
+    .day small {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .day img {
+        width: 100px;
+        margin-top: -10px;
+    }
+
+
+.coder {
+    margin:0 auto;
+    display:block;
+   
+}
+a{
+    color:purple;
+}

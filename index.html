@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4f7b23a78f.js crossorigin=anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/6e60cebc42.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="row no-gutters">
+            <div class="col-6">
+                <form class="searchbar" id="enter-city">
+                    <input class="searchfield" type="text" placeholder="Enter a city" id="search-text-input" />
+                    <button class="searchbutton" id="search-button">Search</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <button class="searchbutton" id="current">Current</button>
+
+            </div>
+            <div class="currentDescription">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="currentlocation" id="city">  </h3>
+                        <h2 class="float-left" id="number"> </h2>
+                        <a href="#" id="celsius-link">
+                            °C
+                        </a>|<a href="#" id="farenheit-link">°F </a>
+
+                        <h6 class="currentdetailsFeels" id="description"> Feels like 10°C </h6>
+                        <h5 class="currentdetails">High: <span id="high">  </span>°C</h5>
+                        <h5 class="currentdetails">Low: <span id="low">  </span>°C</h5>
+                        <h5 class="currentdetails"> Humidity: <span id="humidity">  </span></h5>
+                        <h5 class="currentdetails"> Wind: <span id="wind"> </span> km/h</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="datetime" id="date">Feb. 07, 2023</h5>
+                        <h5 class="datetime" id="current-time"> Local time 17:05</h5>
+                        <img class="currentimage" src="images/sun cloud image.png" / alt="Sun with clouds" width=300>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="forecast">
+                            <div class="row no-gutters">
+                                <div class="col no-gutters">
+                                    <div class="day">
+                                        <h4>Tuesday<br /><small>(Tomorrow)</small> </h4>
+
+                                        <img class="forecastimage" src="images/sun cloud image.png" / alt="Sun with clouds" width=50>
+                                        <h5>High: 13°</h5>
+                                        <h5>Low: 11°</h5>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">
+                                        <h4>Wednesday</h4>
+                                        <img class="forecastimage" src="images/sun cloud image.png" / alt="Sun with clouds" width=50>
+
+                                        <h5> High: 13°</h5>
+                                        <h5> Low: 8°</h5>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">
+                                        <h4> Thursday</h4>
+                                        <img class="forecastimage" src="images/sun cloud image.png" / alt="Sun with clouds" width=50>
+                                        <h5> High:14°</h5>
+                                        <h5>Low: 8° </h5>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">
+                                        <h4> Friday </h4>
+                                        <img class="forecastimage" src="images/sun cloud image.png" / alt="Sun with clouds" width=50>
+                                        <h5> High:15°</h5>
+                                        <h5>Low: 7° </h5>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">
+                                        <h4> Saturday</h4>
+                                        <img class="forecastimage" src="images/sun cloud image.png" / alt="Sun with clouds" width=50>
+                                        <h5> High:16°</h5>
+                                        <h5>Low: 7° </h5>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+                           </div>
+            <p class="coder">
+                Coded by Olena Azulay and <a href="#">open sourced on GitHub</a> and hosted on <a href="https://www.netlify.com/"> Netlify</a>
+            </p>
+
+            <script src="script.js"></script>
+</body>
+</html>
