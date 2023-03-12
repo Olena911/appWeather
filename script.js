@@ -1,36 +1,36 @@
 // JavaScript source code
-let now = new Date();
-let localDate = document.querySelector("#date");
-let date = now.getDate();
-let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-];
-let day = days[now.getDay()];
-let year = now.getFullYear();
-localDate.innerHTML = `${date}, ${day} ${year}`;
+function formatDate(timestamp) {
+    let date = new Date(timestamp);
+    let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ];
+    let day = days[date.getDay()];
 
-let hours = now.getHours();
-if (hours < 10) {
-    hours = `0${hours}`;
+    let hours = date.getHours();
+    if (hours < 10) {
+        hours = `0${hours}`;
+    }
+    let minutes = date.getMinutes();
+    if (minutes < 10) {
+        minutes = `0${minutes}`;
+    }
+    return `Last updated: ${day}, ${hours}:${minutes}`;
 }
-let minutes = now.getMinutes();
-if (minutes < 10) {
-    minutes = `0${minutes}`;
-}
-let time = document.querySelector("#current-time");
-time.innerHTML = `Local time ${hours}:${minutes}`;
-//time.innerHTML = formatDate(response.data.dt * 1000);
+
+    
 
 function showTemp(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#number").innerHTML = Math.round(response.data.main.temp
     );
+    let dateElement = document.querySelector("#date");
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
     let description = document.querySelector("#description");
     description.innerHTML = response.data.weather[0].description;
     let humidity = document.querySelector("#humidity");
