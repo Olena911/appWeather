@@ -14,7 +14,7 @@ let days = [
 let day = days[now.getDay()];
 let year = now.getFullYear();
 localDate.innerHTML = `${date}, ${day} ${year}`;
-////////
+
 let hours = now.getHours();
 if (hours < 10) {
     hours = `0${hours}`;
@@ -25,12 +25,11 @@ if (minutes < 10) {
 }
 let time = document.querySelector("#current-time");
 time.innerHTML = `Local time ${hours}:${minutes}`;
-///////
+//time.innerHTML = formatDate(response.data.dt * 1000);
 
 function showTemp(response) {
     document.querySelector("#city").innerHTML = response.data.name;
-    document.querySelector("#number").innerHTML = Math.round(
-        response.data.main.temp
+    document.querySelector("#number").innerHTML = Math.round(response.data.main.temp
     );
     let description = document.querySelector("#description");
     description.innerHTML = response.data.weather[0].description;
@@ -42,7 +41,11 @@ function showTemp(response) {
     high.innerHTML = Math.round(response.data.main.temp_max);
     let low = document.querySelector("#low");
     low.innerHTML = Math.round(response.data.main.temp_min);
+    let iconElement = document.querySelector("#big-icon");
+    iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
 function searchCity(city) {
     let apiKey = "4a7c01390293f156a41b247c2f0f0679";
     let apiEndpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
