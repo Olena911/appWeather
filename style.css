@@ -158,8 +158,16 @@ body {
     
 }
 a{
-    color:purple;
+    color:rgb(153,33,33);
 }
 h5{
     line-height:0.9;
+}
+.active{
+    color:rgb(33,33,33);
+    cursor:default;
+    
+}
+.active:hover{
+    text-decoration:none;
 }
