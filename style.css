@@ -137,6 +137,7 @@ body {
     box-sizing: content-box;
     margin-top: 20px;
     line-height: 0.1;
+    font-size:16px;
     
 }
 .forecast-temp-min{
